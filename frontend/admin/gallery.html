@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Depertment - Teacher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Tiro+Bangla:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <nav class="bg-white py-2 border-b">
+        <div class="container mx-auto justify-between flex items-center">
+          <a href="/">
+            <div class="flex items-center gap-x-3">
+              <img src="/image/logo.png" alt="rpi-logo" class="w-12 h-12" />
+              <div class="flex flex-col">
+                <h2 class="text-2xl">রংপুর পলিটেকনিক ইনস্টিটিউট</h2>
+                <p class="text-sm">প্রযুক্তির জন্য এসো, প্রবৃদ্ধির জন্য বেরিয়ে যাও</p>
+              </div>
+            </div>
+          </a>
+
+          <div class="flex items-center gap-x-5">
+            <a href="#about">আমাদের সম্পর্কে</a>
+            <a href="#teachers">শিক্ষকবৃন্দ</a>
+            <a href="#notices">নোটিশ</a>
+            <a href="#gallery">গ্যালারি</a>
+            <a href="#contact">যোগাযোগ</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mx-auto pb-8">
+        <div class="mt-6 mb-12">
+          <h3 class="text-3xl mb-3">গ্যালারিতে ছবি যুক্ত করুন</h3>
+
+          <form class="w-full lg:w-[700px]">
+            <div class="form-group">
+              <label for="caption">ক্যাপশন</label>
+              <input type="text" id="caption" />
+            </div>
+            <div class="form-group">
+              <label for="image">ছবি নির্বাচন করুন</label>
+              <input type="file" id="image" />
+            </div>
+
+            <button type="submit">সাবমিট</button>
+          </form>
+        </div>
+
+        <div>
+          <h3 class="text-3xl mb-5">গ্যালারিতে থাকা ছবির তালিকা</h3>
+
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-3" id="gallery-image-container">
+            <img src="/image/entry.jpg" alt="galary-3" />
+            <img src="/image/gate.jpg" alt="galary-1" />
+            <img src="/image/shahed-minar.jpg" alt="galary-4" />
+            <img src="/image/building.jpg" alt="galary-2" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/gallery.ts"></script>
+  </body>
+</html>
