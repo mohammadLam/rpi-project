@@ -1,116 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Computer Depertment - RPI</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/output.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="app">
-      <nav class="bg-white py-2 border-b">
-        <div class="container mx-auto justify-between flex items-center">
-          <div class="flex items-center gap-x-3">
-            <img src="/image/logo.png" alt="rpi-logo" class="w-12 h-12" />
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Depertment - RPI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="app">
+    <nav class="bg-white py-2 border-b">
+      <div class="container mx-auto justify-between flex items-center">
+        <div class="flex items-center gap-x-3">
+          <img src="/image/logo.png" alt="rpi-logo" class="w-12 h-12" />
+          <div class="flex flex-col">
+            <h2 class="text-2xl">রংপুর পলিটেকনিক ইনস্টিটিউট</h2>
+            <p class="text-sm">প্রযুক্তির জন্য এসো, প্রবৃদ্ধির জন্য বেরিয়ে যাও</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-x-5">
+          <a href="#about">আমাদের সম্পর্কে</a>
+          <a href="#teachers">শিক্ষকবৃন্দ</a>
+          <a href="#notices">নোটিশ</a>
+          <a href="#gallery">গ্যালারি</a>
+          <a href="#contact">যোগাযোগ</a>
+          <button onclick="window.location.href='/admin/login.html'">লগইন</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <h1 class="text-6xl text-center absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        রংপুর পলিটেকনিক ইনস্টিটিউটের <br />
+        কম্পিউটার ডিপার্টেমেন্টে <br />
+        <span class="text-8xl text-yellow-400">স্বাগতম</span>
+      </h1>
+    </section>
+
+    <section id="about" class="bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="title">আমাদের সম্পর্কে</h2>
+        <p class="text-lg">
+          কম্পিউটার আধুনিক বিজ্ঞানের এক আশ্চর্যজনক আবিস্কার। আধুনিক সমাজ জীবন কম্পিউটার ছাড়া অচল।
+          তাই আমাদের এই টেকনোলজিতে রয়েছে সর্বাধুনিক কম্পিউটার সামগ্রী, সুদৃশ্য নেটওয়ার্ক ল্যাব,
+          ডিজিটাল ল্যাব, সফ্ টওয়ার ল্যাব, হার্ডওয়ার ল্যাব যেগুলোর প্রত্যেকটিতেই রয়েছে ইন্টারনেট
+          সুবিধা ও সকল ত্তত্ত্বীয় ক্লাস সমূহ পরিচালিত হয় মাল্টিমিডিয়া প্রজেক্টরের সাহায্যে। তাই
+          শিক্ষার্থীরা অর্জন করে সর্বাধুনিক কম্পিউটার জ্ঞান। ২০০৩ সালে চালু হবার পর থেকে এ
+          টেকনোলজির শিক্ষার্থীরা কর্মক্ষেত্রে সাফল্যের সাক্ষর রাখছে। এই টেকনোলজির আসন সংখ্যা-৬০ টি
+          দুই শিফটে = ১২০ জন।
+        </p>
+      </div>
+    </section>
+
+    <section id="teachers">
+      <div class="container mx-auto">
+        <h2 class="title">শিক্ষকবৃন্দ</h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 teacher-container">
+          <div class="teacher-card">
+            <div class="w-18 h-18 bg-green-600 rounded-full"></div>
             <div class="flex flex-col">
-              <h2 class="text-2xl">রংপুর পলিটেকনিক ইনস্টিটিউট</h2>
-              <p class="text-sm">প্রযুক্তির জন্য এসো, প্রবৃদ্ধির জন্য বেরিয়ে যাও</p>
+              <h3 class="text-xl">মোঃ তৌহিদুল আশরাফ</h3>
+              <p>ইন্সট্রাক্টর</p>
             </div>
           </div>
-
-          <div class="flex items-center gap-x-5">
-            <a href="#about">আমাদের সম্পর্কে</a>
-            <a href="#teachers">শিক্ষকবৃন্দ</a>
-            <a href="#notices">নোটিশ</a>
-            <a href="#gallery">গ্যালারি</a>
-            <a href="#contact">যোগাযোগ</a>
-            <button onclick="window.location.href='/admin/login.html'">লগইন</button>
-          </div>
         </div>
-      </nav>
+    </section>
 
-      <section class="hero-section">
-        <h1
-          class="text-6xl text-center absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        >
-          রংপুর পলিটেকনিক ইনস্টিটিউটের <br />
-          কম্পিউটার ডিপার্টেমেন্টে <br />
-          <span class="text-8xl text-yellow-400">স্বাগতম</span>
-        </h1>
-      </section>
+    <section id="notices" class="bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="title">নোটিশ</h2>
 
-      <section id="about" class="bg-gray-100">
-        <div class="container mx-auto">
-          <h2 class="title">আমাদের সম্পর্কে</h2>
-          <p class="text-lg">
-            কম্পিউটার আধুনিক বিজ্ঞানের এক আশ্চর্যজনক আবিস্কার। আধুনিক সমাজ জীবন কম্পিউটার ছাড়া অচল।
-            তাই আমাদের এই টেকনোলজিতে রয়েছে সর্বাধুনিক কম্পিউটার সামগ্রী, সুদৃশ্য নেটওয়ার্ক ল্যাব,
-            ডিজিটাল ল্যাব, সফ্ টওয়ার ল্যাব, হার্ডওয়ার ল্যাব যেগুলোর প্রত্যেকটিতেই রয়েছে ইন্টারনেট
-            সুবিধা ও সকল ত্তত্ত্বীয় ক্লাস সমূহ পরিচালিত হয় মাল্টিমিডিয়া প্রজেক্টরের সাহায্যে। তাই
-            শিক্ষার্থীরা অর্জন করে সর্বাধুনিক কম্পিউটার জ্ঞান। ২০০৩ সালে চালু হবার পর থেকে এ
-            টেকনোলজির শিক্ষার্থীরা কর্মক্ষেত্রে সাফল্যের সাক্ষর রাখছে। এই টেকনোলজির আসন সংখ্যা-৬০ টি
-            দুই শিফটে = ১২০ জন।
-          </p>
-        </div>
-      </section>
-
-      <section id="teachers">
-        <div class="container mx-auto">
-          <h2 class="title">শিক্ষকবৃন্দ</h2>
-
-          <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 teacher-container">
-            <div class="teacher-card">
-              <div class="w-18 h-18 bg-green-600 rounded-full"></div>
-              <div class="flex flex-col">
-                <h3 class="text-xl">মোঃ তৌহিদুল আশরাফ</h3>
-                <p>ইন্সট্রাক্টর</p>
+        <div class="min-h-[400px] max-h-[450px] overflow-y-scroll">
+          <div class="notice-contianer grid grid-cols-1 gap-y-4">
+            <div class="notice-card">
+              <div class="w-12 h-12 rounded-full bg-green-800 flex items-center justify-center">
+                <span class="text-3xl text-white">১</span>
               </div>
-            </div>
-      </section>
 
-      <section id="notices" class="bg-gray-100">
-        <div class="container mx-auto">
-          <h2 class="title">নোটিশ</h2>
-
-          <div class="min-h-[400px] max-h-[450px] overflow-y-scroll">
-            <div class="notice-contianer grid grid-cols-1 gap-y-4">
-              <div class="notice-card">
-                <div class="w-12 h-12 rounded-full bg-green-800 flex items-center justify-center">
-                  <span class="text-3xl text-white">১</span>
-                </div>
-
-                <div>
-                  <h3 class="text-xl">২০২২-২৩ শিক্ষাবর্ষে ১ম পর্বের শিক্ষার্থীদের ভর্তির নোটিশ।</h3>
-                  <p>১০ ডিসেম্বর, ২০২২</p>
-                </div>
+              <div>
+                <h3 class="text-xl">২০২২-২৩ শিক্ষাবর্ষে ১ম পর্বের শিক্ষার্থীদের ভর্তির নোটিশ।</h3>
+                <p>১০ ডিসেম্বর, ২০২২</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="gallery">
-        <h2 class="title">গ্যালারি</h2>
 
-        <div class="flex gap-x-5 overflow-x-scroll">
-          <img src="/image/gate.jpg" alt="galary-1" />
-          <img src="/image/entry.jpg" alt="galary-3" />
-          <img src="/image/building.jpg" alt="galary-2" />
-          <img src="/image/shahed-minar.jpg" alt="galary-4" />
-          <img src="/image/gate.jpg" alt="galary-1" />
-          <img src="/image/entry.jpg" alt="galary-3" />
-          <img src="/image/building.jpg" alt="galary-2" />
-          <img src="/image/shahed-minar.jpg" alt="galary-4" />
+    <section class="booklist">
+      <div class="container mx-auto">
+        <h2 class="title">ক্লাস রুটিন</h2>
+
+        <div class="grid grid-cols-2 gap-5 lg:grid-cols-4">
+          <div class="routine-card border">
+            <img class="w-full h-72 object-cover" src="/routine/semester-7.jpg" alt="semester-7">
+            <div class="bg-white px-3 py-3">
+              <p class="text-base">সপ্তম সেমিস্টার - গ্রুপ এ</p>
+            </div>
+          </div>
+
+          <div class="routine-card border">
+            <img class="w-full h-72 object-cover" src="/routine/semester-4.jpg" alt="semester-4">
+            <div class="bg-white px-3 py-3">
+              <p class="text-base">চতুর্থ সেমিস্টার - গ্রুপ বি</p>
+            </div>
+          </div>
         </div>
-      </section>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+      </div>
+    </section>
+
+    <section id="gallery" class="bg-gray-100">
+      <h2 class="title">গ্যালারি</h2>
+
+      <div class="flex gap-x-5 overflow-x-scroll">
+        <img src="/image/gate.jpg" alt="galary-1" />
+        <img src="/image/entry.jpg" alt="galary-3" />
+        <img src="/image/building.jpg" alt="galary-2" />
+        <img src="/image/shahed-minar.jpg" alt="galary-4" />
+        <img src="/image/gate.jpg" alt="galary-1" />
+        <img src="/image/entry.jpg" alt="galary-3" />
+        <img src="/image/building.jpg" alt="galary-2" />
+        <img src="/image/shahed-minar.jpg" alt="galary-4" />
+      </div>
+    </section>
+
+    <section>
+      <h2 class="title">বইয়ের তালিকা</h2>
+
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-10">
+          <div>
+            <p class="text-xl mb-3">১ম সেমিস্টার</p>
+            <table class="border border-collapse w-full text-base">
+              <tr>
+                <th class="text-left pl-3 py-2 bg-zinc-100">সিরিয়াল নং</th>
+                <th class="text-left pl-3 py-2 bg-zinc-100">বইয়ের নাম</th>
+                <th class="text-left pl-3 py-2 bg-zinc-100">কোড</th>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০১</td>
+                <td class="pl-3 border-b py-1">কম্পিউটার অ্যাপ্লিকশান</td>
+                <td class="pl-3 border-b py-1">৬৬৬১১</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০২</td>
+                <td class="pl-3 border-b py-1">ইলেক্ট্রিক্যাল ইঞ্জিনিয়ারিং ফান্ডামেন্টালস</td>
+                <td class="pl-3 border-b py-1">৬৬৭১২</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৩</td>
+                <td class="pl-3 border-b py-1">ইংলিশ</td>
+                <td class="pl-3 border-b py-1">৬৫৭১২</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৪</td>
+                <td class="pl-3 border-b py-1">গণিত-১ </td>
+                <td class="pl-3 border-b py-1">৬৫৯১১</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৫</td>
+                <td class="pl-3 border-b py-1">পদার্থবিজ্ঞান-১ </td>
+                <td class="pl-3 border-b py-1">৬৫৯১২</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৬</td>
+                <td class="pl-3 border-b py-1">বাংলা</td>
+                <td class="pl-3 border-b py-1">৬৫৭১১</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৭</td>
+                <td class="pl-3 border-b py-1">ফিজিকাল এডুকেশান অ্যান্ড লাইফ স্কিল ডেভেলপমেন্ট</td>
+                <td class="pl-3 border-b py-1">৬৫৮১২</td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+            <p class="text-xl mb-3">২য় সেমিস্টার</p>
+            <table class="border border-collapse w-full text-base">
+              <tr>
+                <th class="text-left pl-3 py-2 bg-zinc-100">সিরিয়াল নং</th>
+                <th class="text-left pl-3 py-2 bg-zinc-100">বইয়ের নাম</th>
+                <th class="text-left pl-3 py-2 bg-zinc-100">কোড</th>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০১</td>
+                <td class="pl-3 border-b py-1">গ্রাফিক্স ডিজাইন-১</td>
+                <td class="pl-3 border-b py-1">৬৬৬২৩</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০২</td>
+                <td class="pl-3 border-b py-1">আইটি সাপোর্ট সিস্টেম-১</td>
+                <td class="pl-3 border-b py-1">৬৬৬২২</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৩</td>
+                <td class="pl-3 border-b py-1">ডাটাবেজ অ্যাপ্লিকশান</td>
+                <td class="pl-3 border-b py-1">৬৬৬২১</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৪</td>
+                <td class="pl-3 border-b py-1">আ্যনালগ ইলেকট্রনিক্স</td>
+                <td class="pl-3 border-b py-1">৬৬৮২৩</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৫</td>
+                <td class="pl-3 border-b py-1">পদার্থবিজ্ঞান-২</td>
+                <td class="pl-3 border-b py-1">৬৫৯২২</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৬</td>
+                <td class="pl-3 border-b py-1">গণিত-২</td>
+                <td class="pl-3 border-b py-1">৬৫৯২১</td>
+              </tr>
+              <tr>
+                <td class="pl-3 border-b py-1">০৭</td>
+                <td class="pl-3 border-b py-1">কমিউনিকেটিভ ইংলিশ</td>
+                <td class="pl-3 border-b py-1">৬৫৭২২</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact bg-zinc-100">
+      <h2 class="title">যোগাযোগ</h2>
+
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.543122191622!2d89.25861061530304!3d25.75261828364087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e32de3d4dc58ad%3A0x1090dfce7f1ec098!2z4Kaw4KaC4Kaq4KeB4KawIOCmquCmsuCmv-Cmn-Cnh-CmleCmqOCmv-CmlSDgpofgpqjgp43gprjgpp_gpr_gpp_gpr_gpongpp8sIOCmsOCmguCmquCngeCmsA!5e0!3m2!1sbn!2sbd!4v1676391286468!5m2!1sbn!2sbd"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="p-10 pl-20 text-xl">
+            <ul class="list-disc">
+              <li>আমাদের সাথে যোগাযোগ করতে ম্যাপ দেখে চলে আসুন আমার পলিটেকনিক ইনস্টিটিউটে। এরপর একাডেমিক ভবন-২ এর দুই
+                তলায় চলে আসুন।</li>
+              <li>যোগাযোগ করুন এই নম্বরেঃ ০১৭০০০০০০০০</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
